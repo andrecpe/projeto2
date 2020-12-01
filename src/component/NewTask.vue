@@ -1,6 +1,6 @@
 <template>
   <div class="new-task">
-    <input type="text" placeholder="Nova tarefa?" v-model="name" @keyup.enter="add" class="form-element" autofocus>
+    <input type="text" placeholder="Nova tarefa?" v-model.trim="name" @keyup.enter="add" class="form-element" autofocus>
     <button @click="add" class="form-element">+</button>
   </div>
 </template>
